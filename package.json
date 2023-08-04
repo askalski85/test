@@ -4,13 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node dist/index.js",
-    "build": "ncc build index.js"
+    "build": "ncc build index.js",
+    "test": "INPUT_GITHUB_TOKEN=1234567890 node dist/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/askalski85/test.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/askalski85/test/issues"
+  },
+  "homepage": "https://github.com/askalski85/test#readme",
   "dependencies": {
-    "@actions/core": "^1.10.0",
-    "@actions/github": "^5.1.1"
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0"
   }
 }
